@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@layer components {
+	.footer-a {
+		@apply p-4;
+	}
+	.overlay {
+		position: relative;
+		background-repeat: no-repeat;
+		z-index: 1;
+		@apply bg-contain;
+	}
+	.overlay::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+	}
+}
+
+@media only screen and (max-width: 1536px) {
+	.overlay::after {
+		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+	.overlay::after {
+		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+	}
+}
+
+@media screen and (max-width: 485px) {
+	.overlay::after {
+		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+	}
+}
+
+.card-h1 {
+	font-family: 'Caudex', serif;
+}
+
+.content p {
+	padding-top: 2em;
+	text-indent: 2em;
+	letter-spacing: 1.5px !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	@apply text-base md:text-[30px] leading-5 md:leading-[45px];
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.geeks {
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.geeks img {
+	width: 100%;
+	transition: 0.5s all ease-in-out;
+}
+
+.geeks:hover img {
+	transform: scale(1.5);
+}
+@layer components {
+	.pagetwo {
+		position: relative;
+		background-repeat: no-repeat;
+		z-index: 1;
+		@apply bg-contain;
+	}
+	.pagetwo::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+	}
+}
+
+@media only screen and (max-width: 1900px) {
+	.pagetwo::after {
+		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+	}
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+	.pagetwo::after {
+		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 92%, rgba(0, 0, 0, 0) 100%);
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.pagetwo::after {
+		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 94%, rgba(0, 0, 0, 0) 100%);
+	}
+}

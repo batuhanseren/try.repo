@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>exceptrea</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link href="./dist/output.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+		<link rel="manifest" href="./favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+	</head>
+	<body class="min-h-screen">
+		<header>
+			<nav class="bg-black px-2 sm:px-4 py-2.5 dark:bg-black w-full md:hidden flex">
+				<div class="flex justify-between items-center">
+					<div class="flex">
+						<a href="index.html" class="">
+							<img src="./img/flammalogo.webp" class="h-6 mr-3 sm:h-9" alt="flammalogo" />
+						</a>
+						<a href="">
+							<img class="h-6 mr-3 sm:h-9" src="./img/imza.png" alt="" />
+						</a>
+					</div>
+				</div>
+				<button class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler" data-target="#navigation">
+					<i class="material-icons"><img src="/img/icons8-menu-rounded-30.png" alt="" /></i>
+				</button>
+			</nav>
+			<div class="hidden top-navbar w-full lg:w-auto bg-black items-center md:hidden" id="navigation">
+				<div class="w-full items-center flex flex-row text-center md:hidden">
+					<a href="index.html" class="w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-[#C2902D]">
+						<span>Home</span>
+					</a>
+					<a href="#" class="w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-[#C2902D]">
+						<span>About</span>
+					</a>
+					<a href="#" class="w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-[#C2902D]">
+						<span>Contact</span>
+					</a>
+				</div>
+			</div>
+			<nav class="bg-black px-2 sm:px-4 py-2.5 dark:bg-black w-full hidden md:block">
+				<div class="container flex flex-wrap items-center justify-between mx-auto">
+					<a href="index.html" class="flex items-center">
+						<img src="./img/flammalogo.webp" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+					</a>
+					<div class="flex md:order-2 w-[94.28px] items-center justify-end">
+						<a href="">
+							<img class="h-6 mr-3 sm:h-9" src="./img/imza.png" alt="" />
+						</a>
+					</div>
+					<div class="items-center mx-auto justify-between hidden w-full text-xl md:flex md:w-auto md:order-1">
+						<ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-black">
+							<li>
+								<a href="index.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-gray-400 md:dark:hover:text-[#C2902D] dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 aria-current=" page>Home</a>
+							</li>
+							<li>
+								<a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+							</li>
+							<li>
+								<a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section class="pagetwo" style="background-image: url('/img/secondreal.png')">
+			<div class="container px-5 lg:px-32 mx-auto relative z-1 py-20">
+				<div class="flex flex-col text-white items-center">
+					<h1 class="!text-[56px] card-h1 font-bold py-12">ROCK BOTTOM</h1>
+					<div class="card-h1 font-medium content">
+						<p class=" ">Roy had always been an introverted person who preferred the peace and quiet of his own company over the noise and chaos of society. That's what he called it "chaos". Despite living in Welcome City, a bustling metropolis which almost everything is in harmony, Roy felt increasingly out of place and overwhelmed by the constant sensory stimulation that surrounded him.</p>
+						<p class=" ">One day, after a particularly stressful week at work, Roy decided that he had had enough of metropolis life. He longed for an escape from it all, a place where he could live a quiet, solitary existence away from the noise and constant stimulation of the city. He always dreamed of a mountaintop small cabinet with essential stuff and nothing more. So he decided to spend almost all of his savings on a place where he could live the rest of his life in isolation.</p>
+						<p class="">Despite having the means to buy a mountaintop retreat, Roy eventually chose a lake bottom as his location of choice. He figured that being isolated beneath the water's surface would be the ultimate form of solitude. He built his bunker deep beneath a lake far away from city, designed so that once inside, there was no way out. He removed all communication devices and relied solely on solar panels for electricity and resources.</p>
+						<p class=" ">Initially, Roy found solace in taking care of the plants and reading books, but over time, he became consumed by loneliness and depression. Despite his initial desires to escape society, he found himself longing for human interaction once again. He realized that he had spent all his savings to escape the very thing he now craved.</p>
+						<p class=" ">Determined to find a way out, Roy started to dig a tunnel under the lake relentlessly. He was desperate for any kind of human connection, even though he had once paid to avoid it. Six months into his escape, the tunnel was almost complete, and finally, he saw a light in the distance. Just as he thought he missed sunlight, it turned out to be just a street light. He realized that Welcome City had expanded and now surrounded the lake in just six months.</p>
+						<p class=" ">As he pondered his situation, he saw a woman waving at him from a distance. To his surprise, he realized it was his ex-girlfriend. They hugged each other, and for the first time in a year, he felt the warmth of human touch. He learned that his ex-girlfriend had just moved somewhere nearby with her husband and was expecting her second child. Although the news saddened him, he was grateful for the human connection. After they said goodbye, he realized that hugging actually made him feel much better. Thinking about the hug, he realized all he wants is to hug his own mother once again, but it would take a lot of money to travel to the other side of Welcome City. So he came up with an idea to use his remaining funds. He bought a holographic sign and made it display "HUG ME 5$," and people began lining up to hug him.</p>
+						<p class=" ">As the line grew longer and Roy grew tired of hugging, he decided he had enough money to travel to the other side of Welcome City. There was still a long line in front of him, so he came up with an idea. He told the people in line to hug each other, and they complied, bringing happiness and a sense of relief to all.</p>
+						<p class="">Once he arrived home, he could hear the news from inside about today's hug queue playing on TV. Stepping inside, he saw his mother crying. He immediately ran up to his mom and hugged her tightly in tears, feeling a sense of love and warmth that he had missed for so long. Despite hugging hundreds of people that day, nothing compared to the feeling of hugging his own mother.</p>
+					</div>
+					<img src="./img/secondreal.png" alt="" class="md:h-auto rounded-2xl p-3" />
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-[#292929] mx-auto w-full">
+			<div class="justify-center flex text-white font-bold">
+				<div class="flex items-center justify-center text-sm text-gray-500 sm:text-center dark:text-gray-400">
+					<a href="http://exceptrea.artstation.com" class="footer-a"><img class="w-full h-8" src="./icons/artstation.png" alt="" /></a>
+					<a href="https://www.instagram.com/exceptrea/" class="footer-a"><img class="w-full h-8" src="./icons/Instagram.png" alt="" /></a>
+					<a href="https://loopexchange.art/collection/flamma" class="footer-a"><img class="w-full h-8" src="./icons/loop.png" alt="" /></a>
+					<a href="https://twitter.com/ExceptRea" class="footer-a"><img class="w-full h-8" src="./icons/Vector.png" alt="" /></a>
+				</div>
+			</div>
+			<div class="flex justify-center py-12 text-white">
+				<a href="index.html" class="flex items-center">
+					&copy
+					<img src="./img/flammalogo.webp" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+				</a>
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="deneme.js"></script>
+	</body>
+</html>
