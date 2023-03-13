@@ -67,17 +67,39 @@
 		background-position: 0% 50%;
 	}
 }
+.border-groove {
+	border: #c2902daa;
+	border-style: groove;
+	border-width: 10px;
+}
 
 .geeks {
 	display: flex;
-	width: 100%;
 	overflow: hidden;
 	margin: 0 auto;
+	z-index: 2;
 }
 
 .geeks img {
 	width: 100%;
 	transition: 0.5s all ease-in-out;
+	height: auto;
+	object-fit: contain;
+}
+
+.card {
+	position: relative;
+}
+
+.card::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: -1;
 }
 
 .geeks:hover img {
@@ -118,4 +140,53 @@
 	.pagetwo::after {
 		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 94%, rgba(0, 0, 0, 0) 100%);
 	}
+}
+/* burası about sayfasının backgorundu */
+@layer components {
+	.about-page {
+		position: relative;
+		background-repeat: repeat;
+		z-index: 1;
+		@apply bg-contain;
+	}
+	.about-page::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+	}
+}
+
+@media only screen and (max-width: 1900px) {
+	.about-page::after {
+		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+	}
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+	.about-page::after {
+		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.about-page::after {
+		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
+	}
+}
+
+.d-boxs {
+	-webkit-box-shadow: 21px 44px 0px -2px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 21px 44px 0px -2px rgba(0, 0, 0, 0.5);
+	box-shadow: 21px 44px 0px -2px rgba(0, 0, 0, 0.5);
+}
+.place-btn {
+	padding: 20px 47px;
+	background: #c2902d;
+	border-radius: 100px;
+	color: black;
 }

@@ -31,7 +31,7 @@
 		<meta name="theme-color" content="#ffffff" />
 	</head>
 
-	<body class="min-h-screen bg-slate-700">
+	<body class="min-h-screen" style="background: black">
 		<header>
 			<nav class="bg-black px-2 sm:px-4 py-2.5 dark:bg-black w-full md:hidden flex">
 				<div class="flex justify-between items-center">
@@ -45,7 +45,7 @@
 					</div>
 				</div>
 				<button class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler" data-target="#navigation">
-					<i class="material-icons"><img src="/img/icons8-menu-rounded-30.png" alt="" /></i>
+					<i class="material-icons"><img src="/img/iconmenu.png" alt="" /></i>
 				</button>
 			</nav>
 			<div class="hidden top-navbar w-full lg:w-auto bg-black items-center md:hidden" id="navigation">
@@ -87,20 +87,38 @@
 				</div>
 			</nav>
 		</header>
-		<section class="py-[50px] lg:py-[200px] min-h-screen">
-			<div class="container px-4 md:px-0 mx-auto gap-[50px] md:gap-24 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-				<div class="flex flex-col gap-6 items-center text-center">
+		<section class="py-[50px] lg:py-[150px] min-h-screen">
+			<div class="container px-10 md:px-5 mx-auto gap-12 md:gap-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+				<div class="flex flex-col gap-5 items-center bg-white/20 pb-5 backdrop-blur-sm text-center text-white">
 					<div class="geeks">
 						<a href="story.html" class="w-full">
-							<img class="h-auto" src="./img/p1.png" alt="" />
+							<img class="h-auto border-groove" src="./img/p1.png" alt="" />
 						</a>
 					</div>
-					<a href="story.html" target="_blank" rel="noopener noreferrer"><h2 class="card-h1 font-bold !text-base md:!text-[30px]">Flamma</h2></a>
+					<a href="story.html" target="_blank" rel="noopener noreferrer" class=""><h2 class="card-h1 font-bold !text-base md:!text-[30px] border px-[150px]">Place a bid</h2></a>
 				</div>
 
+				<div class="flex flex-col gap-5 bg-white/80 pb-5 items-center text-center card">
+					<div class="geeks">
+						<a href="storytwo.html" class="w-full"><img class="h-auto" src="./img/second.png" alt="" /></a>
+					</div>
+					<a href="storytwo.html" target="_blank" rel="noopener noreferrer"><h2 class="card-h1 font-bold !text-base md:!text-[30px]">Rock Bottom</h2></a>
+				</div>
 				<div class="flex flex-col gap-6 items-center text-center">
 					<div class="geeks">
 						<a href="storytwo.html" class="w-full"><img class="h-auto" src="./img/second.png" alt="" /></a>
+					</div>
+					<a href="storytwo.html" target="_blank" rel="noopener noreferrer"><h2 class="card-h1 font-bold !text-base md:!text-[30px]">Rock Bottom</h2></a>
+				</div>
+				<div class="flex flex-col gap-6 items-center text-center border-inset">
+					<div class="geeks">
+						<a href="storytwo.html" class="w-full"><img class="h-auto" src="./img/second.png" alt="" /></a>
+					</div>
+					<a href="storytwo.html" target="_blank" rel="noopener noreferrer"><h2 class="card-h1 font-bold !text-base md:!text-[30px]">Rock Bottom</h2></a>
+				</div>
+				<div class="flex flex-col gap-6 items-center text-center">
+					<div class="geeks">
+						<a href="storytwo.html" class="w-full"><img class="h-auto border-inset" src="./img/second.png" alt="" /></a>
 					</div>
 					<a href="storytwo.html" target="_blank" rel="noopener noreferrer"><h2 class="card-h1 font-bold !text-base md:!text-[30px]">Rock Bottom</h2></a>
 				</div>
@@ -109,14 +127,14 @@
 
 		<footer class="bg-[#292929] mx-auto w-full">
 			<div class="justify-center flex">
-				<div class="flex items-center justify-evenly">
-					<a href="http://exceptrea.artstation.com" class="footer-a"><img class="w-full h-8" src="./icons/artstation.png" alt="" /></a>
-					<a href="https://www.instagram.com/exceptrea/" class="footer-a"><img class="w-full h-8" src="./icons/Instagram.png" alt="" /></a>
-					<a href="https://loopexchange.art/collection/flamma" class="footer-a"><img class="w-full h-8" src="./icons/loop.png" alt="" /></a>
-					<a href="https://twitter.com/ExceptRea" class="footer-a"><img class="w-full h-8" src="./icons/Vector.png" alt="" /></a>
+				<div class="flex flex-wrap items-center justify-evenly">
+					<a href="http://exceptrea.artstation.com" class="footer-a"><img class="md:w-full h-8" src="./icons/artstation.png" alt="" /></a>
+					<a href="https://www.instagram.com/exceptrea/" class="footer-a"><img class="md:w-full h-8" src="./icons/Instagram.png" alt="" /></a>
+					<a href="https://loopexchange.art/collection/flamma" class="footer-a"><img class="md:w-full h-8" src="./icons/loop.png" alt="" /></a>
+					<a href="https://twitter.com/ExceptRea" class="footer-a"><img class="md:w-full h-8" src="./icons/Vector.png" alt="" /></a>
 				</div>
 			</div>
-			<div class="flex justify-center py-12 text-white">
+			<div class="flex justify-center py-6 md:py-8 text-white">
 				<a href="index.html" class="flex items-center">
 					&copy
 					<img src="./img/flammalogo.webp" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
